@@ -1,0 +1,7 @@
+Base del rectangulo. Ingrese un numero real positivo: 0
+Ingreso incorrecto. Por favor intente de nuevo.
+Ingrese un numero real positivo: -2
+Ingreso incorrecto. Por favor intente de nuevo.
+Ingrese un numero real positivo: 2.225
+Altura del rectangulo. Ingrese un numero real positivo: 4.265
+El perimetro del rectangulo es: 12.98

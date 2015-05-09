@@ -1,4 +1,4 @@
-'''c++
+```c++
 #include <iostream>
 
 using namespace::std;
@@ -27,4 +27,4 @@ cout << "Altura del rectangulo. ";
 double altura = GetNumeroPositivo();
 cout << "El perimetro del rectangulo es: " << GetPerimetroRectangulo(base, altura);
 }
-'''
+```

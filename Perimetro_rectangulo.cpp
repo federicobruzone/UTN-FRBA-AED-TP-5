@@ -1,7 +1,7 @@
 /* UTN-FRBA-AED
  * TP Nº 5: Perimetro de un rectangulo
  * Alumno: Federico León Bruzone [155-683.6] 
- * Fecha: 10/05/2015
+ * Fecha: 09/05/2015
 */ 
 
 #include <iostream>

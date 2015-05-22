@@ -6,10 +6,11 @@
 
 #include <iostream>
 
-using namespace::std;
 double GetNumeroPositivo();
 double GetPerimetroRectangulo(double base, double altura);
 void imprimBanner();
+
+using namespace::std;
 
 void imprimBanner()
 {
@@ -21,13 +22,23 @@ void imprimBanner()
 	
 }
 
+int main() {
+
+imprimBanner(); //Imprime un banner en pantalla con información acerca del programa
+cout << "Base del rectangulo. ";
+double base = GetNumeroPositivo(); 	//Esta función asegura que la funcion GetPerimetroREctangulo reciba double
+cout << "Altura del rectangulo. ";	// como parametro
+double altura = GetNumeroPositivo();
+cout << "El perimetro del rectangulo es: " << GetPerimetroRectangulo(base, altura);
+}
+
 double GetNumeroPositivo(){
 	double x;
 	
-	do {
-	cout << "Ingrese un numero real positivo: ";
-	cin >> x;
-		if (x > 0)
+	do { // El método de esta función se ejecuta en un loop infinito
+	cout << "Ingrese un numero real positivo: "; 	//Es una precondicion que el usuario ingrese numeros
+	cin >> x;					//y no caracteres.
+		if (x > 0.0)
 			return x;
 		else
 			cout << "Ingreso incorrecto. Por favor intente de nuevo.\n";
@@ -36,14 +47,4 @@ double GetNumeroPositivo(){
 
 double GetPerimetroRectangulo (double base, double altura){
 	return (2 * (base + altura));
-}
-
-int main() {
-
-imprimBanner();
-cout << "Base del rectangulo. ";
-double base = GetNumeroPositivo();
-cout << "Altura del rectangulo. ";
-double altura = GetNumeroPositivo();
-cout << "El perimetro del rectangulo es: " << GetPerimetroRectangulo(base, altura);
 }
